@@ -1,0 +1,78 @@
+azulClaro = #F2FFFF
+morado = #AB8EAC
+verde = #ACBE54
+nav
+	position fixed
+	background azulClaro
+	height 80px
+	box-shadow none
+	top 0
+	z-index 1000
+	.brand-logo
+		img
+			width 100px
+			padding 5px
+	li, a
+		height 80px
+	li
+		a
+			color black
+			height 80px
+		a:hover
+			// color morado
+			background-color: rgba(0, 0, 0, 0.09);
+	.morado
+		color morado
+		height 80px
+		font-size 40px !important
+.flex-center
+	display flex
+	align-items center
+	justify-content center
+	height 80px !important
+.subrayado
+	background morado
+	padding 5px
+	color #fff
+	
+// Información del medico
+.person-container
+	display flex
+	justify-content center
+	align-items center
+	flex-wrap wrap
+	margin 0.5em 0 
+	position relative
+	transition all 5s ease
+	.photo
+		max-width 200px
+		border-radius 50%
+		padding 1px
+	p
+		
+		text-align center
+		font-weight bold
+	.description
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		height 100%
+		display none
+		justify-content center
+		align-items center
+		p.information
+			text-align center
+			color #fff
+			text-shadow 2px 2px 2px black
+.person-container:hover
+	.description
+		width 100%
+		display flex
+	.photo
+		filter blur(5px)
+.bg-morado
+	background rgba(171, 142, 172, 0.80);
+.bg-verde
+	background rgba(172, 190, 84, 0.80)
+	
